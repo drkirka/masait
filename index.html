@@ -1,1 +1,160 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>irk — portfolio</title>
+  <meta name="description" content="Custom portfolio website" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
+<body>
+  <!-- Фоновый “glow” слой -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Canvas для кастомного курсора/трейла -->
+  <canvas id="cursorCanvas" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <div class="brand">irk<span class="dot">•</span>site</div>
+    <nav class="nav">
+      <a class="link" href="#work">work</a>
+      <a class="link" href="#about">about</a>
+      <a class="link" href="#contact">contact</a>
+      <a class="link pill" href="#contact">hire me</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="badge">⚡ ultra-custom • smooth • interactive</div>
+        <h1 class="title">
+          Делаю дизайн и фронт
+          <span class="gradient">так, чтобы вау.</span>
+        </h1>
+        <p class="subtitle">
+          Минимализм + эффектность: живые анимации, курсор-трейл, микроинтеракции.
+          Чистый код, быстрая загрузка.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary magnetic" href="#work" data-magnetic>Смотреть работы</a>
+          <a class="btn ghost magnetic" href="#contact" data-magnetic>Написать мне</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">60fps</div>
+            <div class="stat-label">анимации</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">0</div>
+            <div class="stat-label">шаблонности</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">кастом</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card glass">
+          <div class="card-top">
+            <div class="lights">
+              <span class="l red"></span>
+              <span class="l yellow"></span>
+              <span class="l green"></span>
+            </div>
+            <div class="card-title">interactive.cursor</div>
+          </div>
+          <div class="card-body">
+            <p class="mono">
+              move your mouse →
+              <br/>hover buttons →
+              <br/>feel the UI
+            </p>
+            <div class="chip-row">
+              <span class="chip">cursor trail</span>
+              <span class="chip">particles</span>
+              <span class="chip">magnetic</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="orb" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <h2 class="h2">Work</h2>
+      <div class="grid">
+        <article class="work glass hover-tilt">
+          <h3>Project A</h3>
+          <p>Лендинг с анимациями и сильной типографикой.</p>
+          <a class="small-link magnetic" href="#" data-magnetic>Open →</a>
+        </article>
+
+        <article class="work glass hover-tilt">
+          <h3>Project B</h3>
+          <p>Портфолио: плавные переходы, микроинтеракции.</p>
+          <a class="small-link magnetic" href="#" data-magnetic>Open →</a>
+        </article>
+
+        <article class="work glass hover-tilt">
+          <h3>Project C</h3>
+          <p>UI kit + дизайн-система под продукт.</p>
+          <a class="small-link magnetic" href="#" data-magnetic>Open →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h2 class="h2">About</h2>
+      <div class="two">
+        <div class="glass pad">
+          <p>
+            Я делаю сайты “дорого выглядящие” без тяжёлых библиотек:
+            чистый фронт, детали, которые цепляют.
+          </p>
+          <ul class="list">
+            <li>✦ Кастомный курсор и интерактив</li>
+            <li>✦ Анимации, которые не лагают</li>
+            <li>✦ Быстро грузится и приятно ощущается</li>
+          </ul>
+        </div>
+        <div class="glass pad">
+          <p class="mono">
+            stack:
+            <br/>HTML • CSS • JS
+            <br/>Figma • motion • taste
+          </p>
+          <div class="divider"></div>
+          <p class="muted">
+            Хочешь — добавим WebGL/Three.js позже, но сначала сделаем идеальную базу.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2 class="h2">Contact</h2>
+      <div class="glass pad">
+        <p class="muted">Напиши мне: добавь сюда свои контакты.</p>
+        <div class="cta">
+          <a class="btn primary magnetic" href="mailto:you@example.com" data-magnetic>Email</a>
+          <a class="btn ghost magnetic" href="https://t.me/yourname" target="_blank" rel="noreferrer" data-magnetic>Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer muted">
+      © <span id="year"></span> irk • made with obsession
+    </footer>
+  </main>
+
+  <script src="./cursor.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
