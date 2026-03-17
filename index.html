@@ -9,11 +9,12 @@
 </head>
 
 <body>
-  <canvas id="starfield"></canvas>
-  <!-- Фоновый лой -->
+  <canvas id="starfield" aria-hidden="true"></canvas>
+
+  <!-- Фоновый слой -->
   <div class="bg-glow" aria-hidden="true"></div>
 
- <!--canvas-->
+  <!-- Кастомный курсор -->
   <canvas id="cursorCanvas" aria-hidden="true"></canvas>
 
   <header class="topbar">
@@ -29,17 +30,19 @@
   <main class="wrap">
     <section class="hero">
       <div class="hero-left">
-        <div class="badge">⚡тут вставь текст хз какой бро</div>
+        <div class="badge">⚡ тут вставь свой текст</div>
+
         <h1 class="title">
           elki
           <span class="gradient">igolki</span>
         </h1>
+
         <p class="subtitle">
-         abc
+          abc
         </p>
 
         <div class="cta">
-          <a class="btn primary magnetic" href="#work" data-magnetic> работы</a>
+          <a class="btn primary magnetic" href="#work" data-magnetic>работы</a>
           <a class="btn ghost magnetic" href="#contact" data-magnetic>Написать мне</a>
         </div>
 
@@ -48,10 +51,12 @@
             <div class="stat-num">60fps</div>
             <div class="stat-label">аним</div>
           </div>
+
           <div class="stat">
             <div class="stat-num">0</div>
             <div class="stat-label">шаблонн</div>
           </div>
+
           <div class="stat">
             <div class="stat-num">∞</div>
             <div class="stat-label">кастом</div>
@@ -60,7 +65,7 @@
       </div>
 
       <div class="hero-right">
-        <div class="card glass">
+        <div class="card glass hover-tilt">
           <div class="card-top">
             <div class="lights">
               <span class="l red"></span>
@@ -69,12 +74,14 @@
             </div>
             <div class="card-title">interactive.cursor</div>
           </div>
+
           <div class="card-body">
             <p class="mono">
               move your mouse →
-              <br/>hover buttons →
-              <br/>feel the UI
+              <br />hover buttons →
+              <br />feel the UI
             </p>
+
             <div class="chip-row">
               <span class="chip">cursor trail</span>
               <span class="chip">particles</span>
@@ -89,6 +96,7 @@
 
     <section id="work" class="section">
       <h2 class="h2">Work</h2>
+
       <div class="grid">
         <article class="work glass hover-tilt">
           <h3>Project A</h3>
@@ -112,24 +120,29 @@
 
     <section id="about" class="section">
       <h2 class="h2">About</h2>
+
       <div class="two">
         <div class="glass pad">
           <p>
-           okak sobstvenno
+            okak sobstvenno
           </p>
+
           <ul class="list">
             <li>✦ звездочка и какой-то пункт</li>
             <li>✦ еще какойто пункт</li>
             <li>✦ ну и третий собсвтенно говоря</li>
           </ul>
         </div>
+
         <div class="glass pad">
           <p class="mono">
             stack:
-            <br/>HTML • CSS • JS
-            <br/>раз • два • три
+            <br />HTML • CSS • JS
+            <br />раз • два • три
           </p>
+
           <div class="divider"></div>
+
           <p class="muted">
             Хочешь — добавим WebGL/Three.js позже, но сначала сделаем идеальную базу.
           </p>
@@ -139,8 +152,10 @@
 
     <section id="contact" class="section">
       <h2 class="h2">Contact</h2>
+
       <div class="glass pad">
         <p class="muted">Напиши мне: kirkaera@gmail.com</p>
+
         <div class="cta">
           <a class="btn primary magnetic" href="mailto:kirkaera@gmail.com" data-magnetic>Email</a>
           <a class="btn ghost magnetic" href="https://t.me/dKirka" target="_blank" rel="noreferrer" data-magnetic>Telegram</a>
@@ -149,7 +164,7 @@
     </section>
 
     <footer class="footer muted">
-      © <span id="year"></span> irk 
+      © <span id="year"></span> irk
     </footer>
   </main>
 
