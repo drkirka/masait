@@ -1,3 +1,3 @@
 # masait
 ## 🌐 Live Demo
-https://your-username.github.io/masait
+https://drkirka.github.io/masait/
